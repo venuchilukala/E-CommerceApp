@@ -13,24 +13,7 @@ import NotFound from './components/NotFound'
 import './App.css'
 
 const App = () => {
-  const [cartList, setCartList] = useState([
-    {
-      title: 'Product 1',
-      brand: 'Brand Name',
-      id: 1001,
-      imageUrl: 'https://assets.ccbp.in/frontend/react-js/sample-product-img.jpg',
-      price: 760,
-      quantity: 5,
-    },
-    {
-      title: 'Product 2',
-      brand: 'Brand Name',
-      id: 1002,
-      imageUrl: 'https://assets.ccbp.in/frontend/react-js/sample-product-img.jpg',
-      price: 760,
-      quantity: 2,
-    },
-  ])
+  const [cartList, setCartList] = useState([])
 
   const addCartItem = product => {
     setCartList(prevState => ([...prevState, product]))
